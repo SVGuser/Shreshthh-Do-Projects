@@ -1,0 +1,63 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+        .car {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+        }
+        .img-wrap {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .img-wrap img {
+            width: 100%;
+            height: auto;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="car">
+        <div class="img-wrap">
+            <img src="C:\Users\Lenovo\OneDrive\Documents\Pictures\Lenovo\LenovoWelcome\icons\Amazon.ico"
+                alt="1">
+            <img src="C:\Users\Lenovo\OneDrive\Documents\Pictures\Lenovo\LenovoWelcome\icons\yt_icon_rgb.ico"
+                alt="2">
+            
+        </div>
+        <button class="btn prev">‹</button>
+        <button class="btn next">›</button>
+    </div>
+</body>
+</html>
