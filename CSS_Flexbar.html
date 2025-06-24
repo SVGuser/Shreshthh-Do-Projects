@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Layout by Shrteshth Vardhan Godaria</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 80vh;
+    }
+
+    nav {
+      background: #f4f4f4;
+      padding: 1rem;
+      width: 20%;
+    }
+
+    main {
+      background: #eaeaea;
+      padding: 1rem;
+      width: 60%;
+    }
+
+    aside {
+      background: #f4f4f4;
+      padding: 1rem;
+      width: 20%;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav, main, aside {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Content</h2>
+      <p>This is the main area where content goes.</p>
+    </main>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>Additional info or links go here.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Flexy Layouts Inc.</p>
+  </footer>
+</body>
+</html>
